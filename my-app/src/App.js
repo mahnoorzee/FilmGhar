@@ -5,10 +5,13 @@ import {Redirect, Switch, Route, Router} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './Components/Navbar';
 import allFilms from './Components/allFilms';
+import customlistFilms from './Components/customlistFilms';
 import TopRatedFilms from './Components/TopRatedFilms';
 import SearchView from './Components/Search';
 import SignUp from './Components/SignUp';
-
+import ViewFilmDetails from './Components/ViewFilmDetail';
+import ViewCustomlist from './Components/viewCustomList';
+import ViewWatchlist from './Components/viewWatchList';
 
 // import cardCarousel from './Components/cardCarousel';
 import img1 from './img1.jpg';
@@ -73,6 +76,9 @@ function MyApp() {
       </Carousel>
     </div>
     <TopRatedFilms/>
+     <ViewWatchlist/>
+    <ViewCustomlist/>
+
     </Route>
     </Switch>
 
@@ -89,6 +95,15 @@ function MyApp() {
         <Route path="/SignUp" component={SignUp}>
         </Route>
       </Switch>
+            <Switch>
+        <Route path="/movie/:id" component={ViewFilmDetails}>
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path="/customlist/:id" component={customlistFilms}>
+        </Route>
+      </Switch>
+
     </div>
 
   );
