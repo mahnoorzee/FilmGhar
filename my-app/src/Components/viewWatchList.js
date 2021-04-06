@@ -1,15 +1,13 @@
 import './TopRatedFilms.css';
 import React from 'react';
-<<<<<<< HEAD
+
 import {Carousel, Card, Button,Row,Col} from 'react-bootstrap';
-=======
-import {Carousel, Card, Button} from 'react-bootstrap';
->>>>>>> 8c33af158ca0cff38af63a6bcceba333a1ec92c4
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Link,Redirect} from 'react-router-dom';
 import watchlists from './Watchlists';
 import films from './Dummy(topRatedFilms).json';
-<<<<<<< HEAD
+
 import StarIcon from '@material-ui/icons/Star';
 import AddCircleIcon from '@material-ui/icons/AddCircle';
 import { FaInfoCircle } from 'react-icons/fa';
@@ -57,7 +55,7 @@ function ViewWatchlist() {
           
           
   </Card>
-=======
+
 
 function ViewWatchlist() {
 
@@ -81,7 +79,7 @@ function ViewWatchlist() {
             </Card>
             </Link>
 
->>>>>>> 8c33af158ca0cff38af63a6bcceba333a1ec92c4
+
   
 
            

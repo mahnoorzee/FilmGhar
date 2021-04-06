@@ -15,16 +15,12 @@
 background-color: #3A2622;
 border-color: #3A2622;
 position:absolute;
-<<<<<<< HEAD
+
 
 bottom: 0;
 margin-bottom: 20px;
 
-=======
-bottom: 0;
-margin-bottom: 20px;
-margin-left: 30px;
->>>>>>> 8c33af158ca0cff38af63a6bcceba333a1ec92c4
+
 }
 .addedbutton:hover {
     background-color: #4D2F28;
@@ -35,23 +31,13 @@ border-color: #4D2F28;
 border-color: #4D2F28;
 }
 
-<<<<<<< HEAD
-.customlist-row{
-  position: relative;
-  margin-bottom: 30px;
-}
-=======
 
->>>>>>> 8c33af158ca0cff38af63a6bcceba333a1ec92c4
 .customlist-container{
 /*padding: 10px;
     width: 100%;*/
  /*     display: flex;
       flex-direction: row;*/
-<<<<<<< HEAD
-      position: relative;
-=======
->>>>>>> 8c33af158ca0cff38af63a6bcceba333a1ec92c4
+
          margin-top: 6px;
     margin-bottom: 30px;
     margin-left: 100px;
