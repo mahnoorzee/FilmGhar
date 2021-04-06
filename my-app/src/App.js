@@ -4,8 +4,8 @@ import {Carousel, Button, Card, CardColumns, Row, Col, Container} from 'react-bo
 import {Redirect, Switch, Route, Router} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './Components/Navbar';
-import allFilms from './Components/allFilms';
-import customlistFilms from './Components/customlistFilms';
+import AllFilms from './Components/allFilms';
+import CustomlistFilms from './Components/customlistFilms';
 import TopRatedFilms from './Components/TopRatedFilms';
 import SearchView from './Components/Search';
 import SignUp from './Components/SignUp';
@@ -88,7 +88,7 @@ function MyApp() {
         </Route>
       </Switch>
       <Switch>
-        <Route path="/allfilms" component={allFilms}>
+        <Route path="/allfilms" component={AllFilms}>
         </Route>
       </Switch>
       <Switch>
@@ -100,7 +100,7 @@ function MyApp() {
         </Route>
       </Switch>
       <Switch>
-        <Route path="/customlist/:id" component={customlistFilms}>
+        <Route path="/customlist/:id" component={CustomlistFilms}>
         </Route>
       </Switch>
 
