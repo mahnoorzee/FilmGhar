@@ -100,7 +100,9 @@ function MyApp() {
         </Route>
       </Switch>
       <Switch>
+
         <Route path="/customlist/:id" component={CustomlistFilms}>
+
         </Route>
       </Switch>
 

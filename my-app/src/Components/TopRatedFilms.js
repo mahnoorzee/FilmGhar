@@ -5,15 +5,20 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Link,Redirect} from 'react-router-dom';
 import topRated from './Dummy(topRatedFilms).json';
 import ViewFilmDetails from './ViewFilmDetail.js';
+<<<<<<< HEAD
 import VerticalModal from './VerticalModal.js';
 import { FaInfoCircle } from 'react-icons/fa';
 import StarIcon from '@material-ui/icons/Star';
 import AddCircleIcon from '@material-ui/icons/AddCircle';
+=======
+
+>>>>>>> 8c33af158ca0cff38af63a6bcceba333a1ec92c4
 
 function TopRatedFilms() {
     const [modalShow, setModalShow] = React.useState(0);
     const renderCard = (card, index) => {
     return (
+<<<<<<< HEAD
   
            
  
@@ -51,6 +56,24 @@ function TopRatedFilms() {
                   { /* <AddCircleIcon fontSize= "large" style={{position:"absolute" ,marginLeft: "190px",color: "#D4AF37"}}  />*/}
             </Card>
            
+=======
+                <Link
+          to={{
+            pathname: `/movie/${card.id}`,
+            state: { referrer: card }
+          }}
+        >
+           
+            <Card style={{ width: '18rem'}} className="box2">
+                    <Card.Img variant="top"  style={{height: '12rem' }} src={card.posterUrl} />
+                    <Card.Body className="color"  style={{height: '11rem'}}>
+                        <Card.Title className="text-color">{card.title}</Card.Title>
+                        <Card.Text className="text-color">{card.year}</Card.Text>
+                        <Button variant="primary">Go somewhere</Button>
+                    </Card.Body>
+            </Card>
+            </Link>
+>>>>>>> 8c33af158ca0cff38af63a6bcceba333a1ec92c4
            
     )}
 

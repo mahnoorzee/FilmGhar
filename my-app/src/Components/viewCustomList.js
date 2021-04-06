@@ -4,7 +4,10 @@ import {Carousel, Card, Button} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Link,Redirect} from 'react-router-dom';
 import customlists from './Customlists';
+<<<<<<< HEAD
 import VerticalModal from './VerticalModal'
+=======
+>>>>>>> 8c33af158ca0cff38af63a6bcceba333a1ec92c4
 
 function ViewCustomlist() {
     const renderCarousel = (card, index) => {
@@ -34,7 +37,11 @@ function ViewCustomlist() {
     )}
 
     return (
+<<<<<<< HEAD
         <div className = "customlist-row">
+=======
+        <div >
+>>>>>>> 8c33af158ca0cff38af63a6bcceba333a1ec92c4
     <h3 className="heading text-color">Custom List</h3>
     <p className="heading text-color">Custom lists made by the users of Film Ghar </p>
     <Carousel indicators = "false" className="customlist-container">
@@ -62,9 +69,13 @@ function ViewCustomlist() {
       src="http://img.dunyanews.tv/news/2017/May/05-10-17/news_big_images/387724_71144245.jpg"
       //alt="First slide"
     />
+<<<<<<< HEAD
 
     </div>
 
+=======
+    </div>
+>>>>>>> 8c33af158ca0cff38af63a6bcceba333a1ec92c4
     <Carousel.Caption className = "customlist-text">
       <h3>{card.name}</h3>
     </Carousel.Caption>
@@ -72,6 +83,7 @@ function ViewCustomlist() {
   
 
             </Link>
+<<<<<<< HEAD
 
             </Carousel.Item>
 
@@ -83,6 +95,14 @@ function ViewCustomlist() {
     </Carousel>
     
   
+=======
+            </Carousel.Item>
+
+        ))}
+    </Carousel>
+   
+
+>>>>>>> 8c33af158ca0cff38af63a6bcceba333a1ec92c4
 </div>
     )};
 export default  ViewCustomlist;

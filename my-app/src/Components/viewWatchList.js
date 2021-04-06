@@ -1,10 +1,15 @@
 import './TopRatedFilms.css';
 import React from 'react';
+<<<<<<< HEAD
 import {Carousel, Card, Button,Row,Col} from 'react-bootstrap';
+=======
+import {Carousel, Card, Button} from 'react-bootstrap';
+>>>>>>> 8c33af158ca0cff38af63a6bcceba333a1ec92c4
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Link,Redirect} from 'react-router-dom';
 import watchlists from './Watchlists';
 import films from './Dummy(topRatedFilms).json';
+<<<<<<< HEAD
 import StarIcon from '@material-ui/icons/Star';
 import AddCircleIcon from '@material-ui/icons/AddCircle';
 import { FaInfoCircle } from 'react-icons/fa';
@@ -52,6 +57,31 @@ function ViewWatchlist() {
           
           
   </Card>
+=======
+
+function ViewWatchlist() {
+
+    const renderCard = (card, index) => {
+      console.log(films.filter(wl => wl.id === card))
+    return (
+                <Link
+          to={{
+            pathname: `/movie/${card}`,
+            state: { referrer: films.filter(wl => wl.id === card)[0] }
+          }}
+        >
+           
+            <Card style={{ width: '18rem'}} className="box2">
+                    <Card.Img variant="top"  style={{height: '12rem' }} src={films.filter(wl => wl.id === card)[0].posterUrl} />
+                    <Card.Body className="color"  style={{height: '11rem' , position: "relative"}}>
+                        <Card.Title className="text-color" style={{ position: "relative"}}>{films.filter(wl => wl.id === card)[0].title}</Card.Title>
+                        <Card.Text className="text-color"  style={{ position: "absolute"}}>{films.filter(wl => wl.id === card)[0].year}</Card.Text>
+                       <Button className = "addedbutton"> ADDED TO WATCHLIST </Button>
+                    </Card.Body>
+            </Card>
+            </Link>
+
+>>>>>>> 8c33af158ca0cff38af63a6bcceba333a1ec92c4
   
 
            

@@ -5,6 +5,7 @@ import {Card, Row, Col, Button} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import movieData from './Dummy(topRatedFilms).json';
 import {Link,Redirect} from 'react-router-dom';
+<<<<<<< HEAD
 import VerticalModal from './VerticalModal.js';
 import { FaInfoCircle } from 'react-icons/fa';
 import StarIcon from '@material-ui/icons/Star';
@@ -55,11 +56,20 @@ function CustomlistFilms(props) {
     return (
       <Card style={{ width: '16rem', position: "relative"}} className="box2">
                            <Link
+=======
+
+function customlistFilms(props) {
+    const customlistrecvd = props.location.state.referrer
+    const renderCard = (card, index) => {
+    return (
+           <Link
+>>>>>>> 8c33af158ca0cff38af63a6bcceba333a1ec92c4
           to={{
             pathname: `/movie/${card.id}`,
             state: { referrer: card }
           }}
         >
+<<<<<<< HEAD
                      <Card.Img variant="top"  style={{height: '18rem' }} src={card.posterUrl} />
                     
                     </Link>
@@ -86,13 +96,33 @@ function CustomlistFilms(props) {
                     </Card.Body>
                     {/*<AddCircleIcon fontSize= "large" style={{position:"absolute" ,marginLeft: "190px",color: "#D4AF37"}}  />*/}
             </Card>
+=======
+            <Card style={{ width: '18rem' }} className="box">
+                    <Card.Img variant="top" src={card.posterUrl} />
+                    <Card.Body className="color" style={{height: '11rem' , position: "relative"}}>
+                        <Card.Title className="text-color">{card.title}</Card.Title>
+                        <Card.Text className="text-color">{card.year}</Card.Text>
+                        <Button className = "addedbutton"> ADD TO WATCHLIST </Button>
+                   
+                    </Card.Body>
+            </Card>
+           </Link>
+>>>>>>> 8c33af158ca0cff38af63a6bcceba333a1ec92c4
     )}
 
     return (
         <div>
+<<<<<<< HEAD
     <h1 className="txtAllFilms text-color">{customlistrecvd.name}</h1>
+=======
+    <h1 className="txtAllFilms text-color">All Films</h1>
+>>>>>>> 8c33af158ca0cff38af63a6bcceba333a1ec92c4
 
     <div className="grid container-fluid">{ movieData.filter(movie => customlistrecvd.movie_id.includes(movie.id)).map(renderCard)}</div>
         </div>
     )};
+<<<<<<< HEAD
 export default CustomlistFilms;
+=======
+export default customlistFilms;
+>>>>>>> 8c33af158ca0cff38af63a6bcceba333a1ec92c4
