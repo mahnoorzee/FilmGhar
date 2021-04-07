@@ -83,7 +83,6 @@ function ViewCustomlist() {
             </Carousel.Item>
 
 
-            </Carousel.Item>
 
         ))}
     </Carousel>
