@@ -2,7 +2,7 @@ import './allFilms.css';
 import React, { Component } from 'react';
 import {Card, Row, Col, Button} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import movieData from './dummy.json';
+import movieData from './Dummy(topRatedFilms).json';
 import VerticalModal from './VerticalModal.js';
 import { FaInfoCircle } from 'react-icons/fa';
 import StarIcon from '@material-ui/icons/Star';
@@ -76,7 +76,9 @@ function AllFilms() {
 
     return (
         <div>
-    <h1 className="txtAllFilms text-color">All Films</h1>
+        <div className="section-heading">
+    <h3 >All Films</h3>
+    </div>
     <div className="grid container-fluid">{movieData.map(renderCard)}</div>
         </div>
     )};

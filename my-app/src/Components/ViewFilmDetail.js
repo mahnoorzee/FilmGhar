@@ -113,7 +113,7 @@ axios.request(options).then(function (response) {
                     <Card.Img variant="top"  style={{height: '12rem' }} src={findActorimg(card)} />
                     <Card.Body className="color"  style={{height: '7rem', position: "relative"}}>
                     <div>
-                        <Card.Title  className="text-color" style={{ textAlign: 'justify', position: "absolute"}}>{findActorname(card)}</Card.Title>
+                        <Card.Title style={{ textAlign: 'justify', position: "absolute"}}>{findActorname(card)}</Card.Title>
                          <Card.Text className="person-type-text">{findActorType(card)}</Card.Text>
                          </div>
                     </Card.Body>
@@ -184,8 +184,14 @@ return (
       <Form.Group >
       <Row>
       <div>
-<div><img className = "placeholder-image" src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png" alt="Avatar"/></div>
- <div className ="review-text"> <div><Rating name="half-rating-read" value={props.location.state.referrer.rating} precision={0.5} readOnly /> </div><Form.Control className = "comment-form"   type="text" placeholder="Write a comment" /></div>
+
+<div className = "review-user"><img className = "placeholder-image" src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png" alt="Avatar"/></div>
+ 
+ 
+ <Row><Rating name="half-rating-read" value={props.location.state.referrer.rating} precision={0.5} readOnly /> </Row>
+ <Row style = {{paddingTop:'20px', paddingLeft:'10px'}}><Form.Control className = "comment-form"   type="text" placeholder="Write a comment" /></Row>
+ 
+  
   </div>
   </Row>
 

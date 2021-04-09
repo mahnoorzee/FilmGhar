@@ -103,8 +103,10 @@ function TopRatedFilms() {
 
     return (
         <div className="my-5">
-    <h3 className="heading text-color">Top Rated Films</h3>
-    <p className="heading text-color">Five Top Rated films by the users of Film Ghar </p>
+        <div className = "section-heading">
+    <h3 >Top Rated Films</h3>
+    <p >Five Top Rated films by the users of Film Ghar </p>
+    </div>
 
     <div className="grid2 conatainer-fluid justify-content-center mx-5">{topRated.map(renderCard)}</div>
         </div>
