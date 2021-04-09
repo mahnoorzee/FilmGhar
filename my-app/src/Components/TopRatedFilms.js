@@ -1,11 +1,14 @@
 import './TopRatedFilms.css';
 import React from 'react';
+
 import {Card, Button, Row, Col, Modal} from 'react-bootstrap';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {Link,Redirect} from 'react-router-dom';
 import topRated from './Dummy(topRatedFilms).json';
+
 import { FaInfoCircle } from 'react-icons/fa';
 import Popup from 'reactjs-popup';
-import {Link,Redirect} from 'react-router-dom';
 import 'reactjs-popup/dist/index.css';
 import VerticalModal from './VerticalModal';
 import StarIcon from '@material-ui/icons/Star';
@@ -59,6 +62,7 @@ function TopRatedFilms() {
     const [modalShow, setModalShow] = React.useState(0);
     const renderCard = (card, index) => {
     return (
+
         <Card style={{ width: '16rem', position: "relative"}} className="box2 rounded">
         <Link
             to={{
@@ -92,6 +96,7 @@ function TopRatedFilms() {
  </Card.Body>
 { /* <AddCircleIcon fontSize= "large" style={{position:"absolute" ,marginLeft: "190px",color: "#D4AF37"}}  />*/}
 </Card>
+
 
 
     )}

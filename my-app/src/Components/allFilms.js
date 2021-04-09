@@ -9,12 +9,27 @@ import StarIcon from '@material-ui/icons/Star';
 import AddCircleIcon from '@material-ui/icons/AddCircle';
 import {Link,Redirect} from 'react-router-dom';
 
+// function AllFilms() {
+//      const [modalShow, setModalShow] = React.useState(0);
+//      const addToWatchlist = (film) => {
+//         /*get watchlist, search for our watchlist, post request to our watchlist*/
+//        /*const wltoadd = watchlists.filter(wl => wl.user_id === user)*/
+//        /*   const [values, setValues] = React.useState({
+//     id: '',
+//     movie_id: '',
+//     review: ''
+//   });
+// */
+
 
 function AllFilms() {
   const [modalShow, setModalShow] = React.useState(0);
+
     const renderCard = (card, index) => {
+
     return (
            
+
       <Card style={{ width: '16rem', position: "relative"}} className="box2 rounded">
       <Link
             to={{
@@ -55,6 +70,7 @@ function AllFilms() {
             //             <Button variant="primary">Go somewhere</Button>
             //         </Card.Body>
             // </Card>
+
            
     )}
 

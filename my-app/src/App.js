@@ -5,16 +5,19 @@ import {Redirect, Switch, Route, Router} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './Components/Navbar';
 import AllFilms from './Components/allFilms';
+
 import TopRatedFilms from './Components/TopRatedFilms';
 import SearchView from './Components/Search';
 import Wheel from './Components/Spinner';
 import SignUp from './Components/SignUp';
+
 import SpinnerModal from './Components/SpinnerModal';
 import IntermediateSpinnerModal from './Components/IntermediateSpinnerModal';
 import Form2 from './Components/Form';
 import topRated from './Components/Dummy(topRatedFilms).json';
 import ViewWatchlist from './Components/viewWatchList';
 import ViewFilmDetails from './Components/ViewFilmDetail';
+
 
 import img1 from './img1.jpg';
 import img2 from './img2.jpg';
@@ -104,8 +107,10 @@ function MyApp() {
       </Carousel>
     </div>
     <TopRatedFilms/>
+
     <ViewWatchlist/>
     {/* <Wheel items={places} /> */}
+
     </Route>
     
     
@@ -133,6 +138,7 @@ function MyApp() {
         <Route path="/movie/:id" component={ViewFilmDetails}>
         </Route>
       </Switch>
+
      
     {/* <Form/> */}
      

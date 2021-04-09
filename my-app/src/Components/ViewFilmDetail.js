@@ -27,8 +27,10 @@ function ViewFilmDetails(props){
   };
 
   const [actorData, setActordata] = React.useState([])
+
   console.log("ACTORS")
   console.log(props.location.state.referrer.actors)
+
 /*  	const [values, setValues] = React.useState({
     id: '',
     movie_id: '',
@@ -143,7 +145,9 @@ return (
           <Row className="">
 
         <nav>
+
             <div class="nav nav-tabs nav-fill " id="nav-tab" role="tablist">
+
                 <a class="nav-item nav-link" id = "person-tab" data-toggle="tab"  href = "#nav-person" role="tab" >Cast/Crew</a>
                 <a class="nav-item nav-link"   data-toggle="tab"  href = "#nav-plot" role="tab"  >Plot</a>
                 <a class="nav-item nav-link"  data-toggle="tab"  href = "#nav-images"  role="tab" >Images</a>

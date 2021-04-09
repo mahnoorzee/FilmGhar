@@ -1,4 +1,6 @@
+
 import './viewWatchList.css';
+
 import React from 'react';
 
 import {Carousel, Card, Button,Row,Col} from 'react-bootstrap';
@@ -49,7 +51,9 @@ function ViewWatchlist() {
                         </Row>
                    
                        
+
                        {/* <Button className="addedbutton2 mr-3 mb-3"><div className="p-1">REMOVE FROM WATCHLIST</div></Button> */}
+
                     </Card.Body>
                     { /* <AddCircleIcon fontSize= "large" style={{position:"absolute" ,marginLeft: "190px",color: "#D4AF37"}} />*/}
           

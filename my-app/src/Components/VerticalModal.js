@@ -4,8 +4,10 @@ import {Card, Button, Row, Col, Modal} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import topRated from './Dummy(topRatedFilms).json';
 import { FaInfoCircle } from 'react-icons/fa';
+
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
+
 
 function VerticalModal(props) {
   console.log(props);
@@ -24,9 +26,11 @@ function VerticalModal(props) {
         </Modal.Header>
         <Modal.Body>
           <h4 className="sideDist">{props.content.title}</h4>
+
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7n2hpzE1hNzc4V7nHj_GT2CWSqtjCld0PhQ&usqp=CAU" className="float-left ml-0 px-3"/>
           <p className="container-75 text-left px-5 w-0" style={{width: '2rem'}}>
             Cras mattis  purus sit amet fermentum. Cras justo odio,
+
             dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
             consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
             dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
@@ -52,3 +56,5 @@ function VerticalModal(props) {
   export default VerticalModal;
 
 
+// gti add *  git commit -m "yo message"
+// git push origin master
