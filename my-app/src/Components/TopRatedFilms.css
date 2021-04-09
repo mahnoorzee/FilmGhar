@@ -1,12 +1,10 @@
+/* *{font-family: Roboto} */
 .box2 {
     margin-top: 6px;
     margin-bottom: 30px;
     margin-left: 20px;
     margin-right: 20px;
     border: none;
-    /* border-radius: 20px; */
-    /* margin-bottom: 30px; */
-    /* margin-top: 30px; */
 }
 
 
@@ -32,8 +30,45 @@
 }
 .text-color {
     color: white;
+    font-family: Roboto;
+    font-size: 19px;
+
+    
 }
 
 .color {
     background-color: #4D2F28;
 }
+.modalSize {
+    background-color:#4D2F28;
+}
+
+.modalText {
+    margin-left: 70px;
+}
+.modalText2 {
+    margin-left: 18px;
+}
+.sideDist {
+    margin-left: 10px;
+}
+.contained-modal-title-vcenter {
+    margin-left: 20px;
+}
+.marginGenre {
+    margin-left: 2px;
+    margin-right: 20px;
+}
+.padding-0{
+    padding-right:0 !important;
+    padding-left:0 !important;
+}
+.siz {
+    size: 20px;
+}
+@media only screen and (min-width: 1024px){ .container-75 {
+    width: 820px !important;
+    height: 50px !important;
+    padding-top: 0px;
+}}
+

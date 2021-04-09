@@ -1,0 +1,47 @@
+.BTN {
+    margin-top: 3px;
+    /* //padding: 5px; */
+    border-radius: 20px;
+    border-color: #707070;
+    height: 35px;
+    width: 90px;
+    color: white;
+    font-size: small;
+   
+}
+.container { 
+    width: 25%;
+  }
+.nav-item1 {
+    padding-right: 25px;
+}
+
+.nav-item2 {
+    margin-right: 10px;
+}
+
+.text {
+    padding-top: 2px;
+    color: white;
+    text-decoration: none;
+    /* font-size: medium; */
+}
+.form-control {
+    border-radius: 20px;
+    background-color: white;
+    opacity: 0.3;
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+

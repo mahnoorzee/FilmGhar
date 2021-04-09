@@ -5,6 +5,27 @@
 .nav-item:hover{
   color:yellow;
 }
+*{padding:0;margin:0;}
+  /* overflow-x: hidden;} */
+
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#8B4513;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  box-shadow: 2px 2px 3px #101010;
+	border: none;
+}
+
+.my-float{
+	margin-top:22px;
+}
 
 /* .carousel-caption {
   top: 250px;
@@ -53,23 +74,29 @@
 
 .row {
   align-content: center;
-  margin-left: 10px;
+  /* margin-left: 10px; */
 }
-.md-center {
+/* .md-center {
   margin-left: 10px ;
-}
-.container-75 {
+} */
+/* .container-75 {
   margin-left: 170px;
   padding-left: 155px;
-  padding-right: 155px;
+  padding-right: 155px; */
   /*
    width: 580px ; */
-}
-.px-5 {
+/* } */
+/* .px-5 {
   padding-left: 15px;
   padding-right: 15px;
-}
+} */
 
 /* .card {
   width: 250px;
 } */
+
+.imageFit {
+  width: 1000px;
+  height: 550px;
+  object-fit: fill;
+}
