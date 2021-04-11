@@ -134,6 +134,26 @@ float: left;
   margin: 20px 0;
 
 }
+.nav-item {
+    color: white;
+    background-color: white;
+    text-decoration:none;
+
+}
+a.nav-item.nav-link:hover {
+    color: #D79C01;
+    text-decoration:none;
+   
+}
+a.nav-item.nav-link.active {
+    color: #D79C01;
+    text-decoration:none;
+   
+}
+.descr-container{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
 
 .all-reviews-container{
 	width: 100%;

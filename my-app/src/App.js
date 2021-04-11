@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './Components/Navbar';
 import Guestbar from './Components/guest';
 import AllFilms from './Components/allFilms';
+import FilmsReleasedThisWeek from './Components/FilmsReleasedThisWeek';
 import profile from './Components/profile';
 
 import TopRatedFilms from './Components/TopRatedFilms';
@@ -150,6 +151,7 @@ function MyApp() {
             </Carousel.Item>
             </Carousel>
     </div>
+    <FilmsReleasedThisWeek/>
     <TopRatedFilms/>
 
     <ViewWatchlist/>

@@ -11,6 +11,7 @@ import users from './Users.json';
 
 function profileDetails(props){
     //const identity =  props.location.pathname
+
     let varPar = (props.location.pathname).split('/')
     const id = varPar[2]
     console.log("Ideee", varPar[2])
@@ -55,12 +56,13 @@ function profileDetails(props){
         console.log("In here", localStorage.getItem("id"))
         
         return(
+          <>  {localStorage.clear()}
         <Link to={{pathname: `/`}}>
             <button type="button" class="btn btn-outline-primary buttonLog">
                 Logout
             </button>
-            {localStorage.clear()}
-        </Link>)
+            
+        </Link> </>)
         
     }
 

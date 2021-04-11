@@ -64,24 +64,6 @@ function ViewFilmDetails(props){
       console.log(response.data)
     })
   }*/
-  const options = {
-  method: 'GET',
-  url: 'https://imdb8.p.rapidapi.com/actors/get-bio',
-  params: {nconst: 'nm0001667'},
-  headers: {
-    'x-rapidapi-key': 'e5ee6d7a07mshdf345140ec8c77bp14f39fjsn3523e12e8c89',
-    'x-rapidapi-host': 'imdb8.p.rapidapi.com'
-  }
-};
-useEffect(()=>{
-axios.request(options).then(function (response) {
-	setActordata(response.data)
-	console.log(response.data);
-	console.log("setdata",actorData.image)
-}).catch(function (error) {
-	console.error(error);
-});},[]);
-
 
 
 
@@ -150,7 +132,7 @@ return (
 
             <div class="nav nav-tabs nav-fill " id="nav-tab" role="tablist">
 
-                <a class="nav-item nav-link" id = "person-tab" data-toggle="tab"  href = "#nav-person" role="tab" >Cast/Crew</a>
+                <a class="nav-item nav-link"  id = "person-tab" data-toggle="tab"  href = "#nav-person" role="tab" >Cast/Crew</a>
                 <a class="nav-item nav-link"   data-toggle="tab"  href = "#nav-plot" role="tab"  >Plot</a>
                 <a class="nav-item nav-link"  data-toggle="tab"  href = "#nav-images"  role="tab" >Images</a>
                 <a class="nav-item nav-link"  data-toggle="tab"  href = "#nav-genre" role="tab" >Genre</a>
@@ -161,7 +143,7 @@ return (
 					</div>
 
 					</div>
-					<div class="tab-pane fade" id="nav-plot" role="tabpanel" >
+					<div class="tab-pane fade descr-container" id="nav-plot" role="tabpanel" >
 					{props.location.state.referrer.plot}
 					</div>
 					<div class="tab-pane fade" id="nav-images" role="tabpanel">

@@ -167,4 +167,15 @@ justify-content: center;
     height: 50px !important;
     padding-top: 0px;
 }}
+@media screen and (max-width: 40em) {
+    .grid2 {
+        display: flex;
+        flex-wrap: wrap;
+       
+    }
+ 
+    .box2{
+        flex: 0 1 calc(50% - 1em);
+    }
+}
 
