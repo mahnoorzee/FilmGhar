@@ -21,14 +21,14 @@ function VerticalModal(props) {
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter  modalColor">
-            <h5 className="mt-2 ml-2">Quick Movie Info</h5>
+            <h5 className="mt-2 ml-2" style={{color: 'black'}}>Quick Movie Info</h5>
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <h4 className="sideDist">{props.content.title}</h4>
+          <h4 className="sideDist" style={{color: 'black'}}>{props.content.title}</h4>
 
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7n2hpzE1hNzc4V7nHj_GT2CWSqtjCld0PhQ&usqp=CAU" className="float-left ml-0 px-3"/>
-          <p className="container-75 text-left px-5 w-0" style={{width: '2rem'}}>
+          <p className="container-75 text-left px-5 w-0" style={{width: '2rem', color: 'black'}}>
             Cras mattis  purus sit amet fermentum. Cras justo odio,
 
             dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
@@ -36,7 +36,7 @@ function VerticalModal(props) {
             dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
             consectetur ac, vestibulum at eros.
           </p>
-          <div className="container-75 modalText pt-5 mt-2"><b>Genre:</b>
+          <div className="container-75 modalText pt-5 mt-2" style={{color: 'black'}}><b>Genre:</b>
          <Row className="">{props.content.genres.map((key,i) => (
                 
                 <Col className="pt-1 offset-lg-2 mr-2 col-lg-2 modalText2 padding-0 "><button className="">{key}</button></Col>
@@ -44,7 +44,7 @@ function VerticalModal(props) {
           ))}
           </Row>
           </div>
-          <h6 className="container-75 modalText mt-5"><b>Year: </b>{props.content.year}</h6>
+          <h6 className="container-75 modalText mt-5" style={{color: 'black'}}><b>Year: </b>{props.content.year}</h6>
         </Modal.Body>
         <Modal.Footer>
           <Button onClick={props.onHide}>Close</Button>

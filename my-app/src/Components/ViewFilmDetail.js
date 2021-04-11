@@ -110,6 +110,7 @@ axios.request(options).then(function (response) {
     return (
            
             <Card style={{ width: '18rem'}} className="box2">
+                  <Link to={{pathname: `/nametag/${card}`, state: { referrer: card }}}>    
                     <Card.Img variant="top"  style={{height: '12rem' }} src={findActorimg(card)} />
                     <Card.Body className="color"  style={{height: '7rem', position: "relative"}}>
                     <div>
@@ -117,6 +118,7 @@ axios.request(options).then(function (response) {
                          <Card.Text className="person-type-text">{findActorType(card)}</Card.Text>
                          </div>
                     </Card.Body>
+                  </Link>
             </Card>
     )}
 
